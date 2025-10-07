@@ -6,11 +6,15 @@ class Predator:
     def hunt(self):
         print("this animal is hunting")
 
-class Rabbits(Prey):
+class Rabbit(Prey):
     pass
 
-class Hawks(Predator):
+class Hawk(Predator):
     pass
 
 class Fish(Prey, Predator):
     pass
+
+rabbit = Rabbit()
+hawk = Hawk()
+fish = Fish()
