@@ -17,4 +17,15 @@ class Student:
     def get_count(cls):
         return f"total number of students: {cls.count} with the total gpa of {cls.total_gpa}"
 
+    @classmethod
+    def get_average(cls):
+        if cls.count == 0:
+            return 0
+        else:
+            return f"{cls.total_gpa/cls.count}"
+
+student1 = Student("Mateus", 2.0)
+student2 = Student("leo", 3.0)
+
 print(Student.get_count())
+print(Student.get_average())
